@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="C:\Users\Usuario\Downloads\documentos HTML\pecas_deXadrez\Projeto_Xadrez.css">
+
+	<style type="text/css">
+		nav{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 400px;
+
+		}
+		.options{
+			display: flex;
+	    color: #fff;
+		background-color: rgb(159,99,66);
+		width:310px ;
+		height: 80px;
+		border-radius: 8px;
+		margin-top: 4px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		box-shadow:inset 0 0 1em  #000;
+		}
+		input{ 
+			display: flex;
+			flex-direction: column;
+			margin: 5px;
+
+		}
+
+	</style>
+	<title>Opções</title>
+</head>
+<body>
+
+	<nav>
+		<h1>Opções</h1>
+
+		<div class="options inputs Cor" >
+			Cor do Tabuleiro 
+		
+			<input type="color" Id="CordoTabuleiro" value="#9F6342" onclick="corTabuleiro(this)">
+		</div>
+
+
+		<div class="options inputs Peça">
+			<h6>(Quer começar com que lado ?)</h6>
+		 	<input type="radio" name="Cores" value="Branco">
+		 	Branco
+		 	<!--o nome "Cores"esta igual pra que seja booleano -->
+		 	<input type="radio" name="Cores" value="Preto">Preto
+		</div>
+
+		<div class="options inputs Fundo">
+			Plano de Fundo
+			<input type="file" accept="image/*, .jpg, .png">
+		</div> 
+
+
+		<div class="options inputs">
+			Dificuldade 
+			<input type="range" list="tickmarks" >
+
+				<datalist id="tickmarks">
+ 						
+  						  <option value="10" label="1%">
+ 						  <option value="20">
+  						  <option value="30">
+ 						  <option value="40">
+  						  <option value="50" label="50%">
+						  <option value="60">
+						  <option value="70">
+						  <option value="80">
+						  <option value="90">
+						  <option value="100" label="100%">
+				</datalist>
+		</div>
+
+	<a href="C:\Users\Usuario\Downloads\documentos HTML\pecas_deXadrez\Projeto_Xadrez.html">
+		<div class="nav1 sair">Voltar</div>
+	</a>
+	</nav>
+	
+
+	<script type="text/javascript" src="./Projeto_Xadrez.js"></script>
+
+</body>
+</html>

@@ -3,112 +3,46 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<style type="text/css">
-		body{display: flex;
-			justify-content:space-between;
-			text-align: center;	
-			flex-direction: row;
-			background-image: url("https://img.elo7.com.br/product/original/29807FE/fundo-fotografico-em-tecido-madeira-2-20x1-50m-estudio.jpg ");
-			background-size: cover;
+	<link rel="stylesheet" type="text/css" href="C:\Users\Usuario\Downloads\documentos HTML\pecas_deXadrez\Projeto_Xadrez.css">
 
-
-		}
-		
-	.fora{display: flex;
-		flex-direction: row;
-		border:solid 8px rgb(243, 230, 148) ;
-		background-color: #fff;
-		margin-top: 60px;
-		box-shadow: 0 0 2em black;
-		
-	}
-
-
-	tbody tr:nth-child(odd) td:nth-child(even) {
-  					background: rgb(159,99,66);
-	}
-	tbody tr:nth-child(even) td:nth-child(odd) {
- 					 background: rgb(159,99,66);
-	}
-
-	td{
-		width:55px ;
-		height:55px ;
-	}
-	.outros{display: flex;
-		flex-direction: column;
-		background-color: white;
-
-	}
-
-
-	.others{display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		height: 55px;
-		width: 10px;
-		
-		margin-top:5px; 
-	}
-	img{border-radius:  8px;
-		width: 48px;
-		height: 48px;
-	}
-
-	tfoot td{height: 10px;
-		background-color: white;
-	}
-
-	nav{margin:0px;
-	}
-	
-	section{ width:900px;
-		display: flex;
-		justify-content: start;
-	}
-	.nav1{display: flex;
-	    color: #fff;
-		background-color: rgb(163,163,163);
-		width:110px ;
-		height: 48px;
-		border-radius: 8px;
-		margin: 4px;
-		text-align: center;
-		align-items: center;
-		justify-content: center;
-
-	}
-	.nav1:hover{background-color: rgb(197, 197, 197);
-
-	}
-	a{text-decoration: none;
-
-	}
-	
-	</style>
 </head>
 <body>
 	<nav>
-		<div class="nav1">Iniciar</div>
-		<div class="nav1">Opções</div>
-		<a href="https://www.tabuleirodexadrez.com.br/regras-do-xadrez.html" target="Blank">
-			<div class="nav1">Ajuda</div>
+		<h1>Menu Principal</h1>
+
+				<div class="nav1 iniciar" onclick="mostrarTabuleiro(this)">
+					Iniciar
+				</div>
+		<a href="C:\Users\Usuario\Downloads\documentos HTML\pecas_deXadrez\Projeto_Xadrez_page2.html">
+				<div class="nav1 opcoes">
+					Opções
+				</div>
 		</a>
-		<div class="nav1">Sair</div>
+
+		<a href="https://www.tabuleirodexadrez.com.br/regras-do-xadrez.html" target="Blank">
+				<div class="nav1 ajuda" onclick="ajuda()">
+					Ajuda
+				</div>
+
+		</a>
+				<a href="C:\Users\Usuario\Downloads\documentos HTML\pecas_deXadrez\Tela_Principal.html"><div class="nav1 sair">
+					Sair
+			    </div>
+			</a>
+				
 	</nav>
 	<section>
 	<div class="fora">
 		
 		<div class="outros">
-			<div class="others">1</div>
-			<div class="others">2</div>
-			<div class="others">3</div>
-			<div class="others">4</div>
-			<div class="others">5</div>
-			<div class="others">6</div>
-			<div class="others">7</div>
 			<div class="others">8</div>
+			<div class="others">7</div>
+			<div class="others">6</div>
+			<div class="others">5</div>
+			<div class="others">4</div>
+			<div class="others">3</div>
+			<div class="others">2</div>
+			<div class="others">1</div>
 			</div>
 	
 
@@ -121,55 +55,55 @@
 			<tr>
 				
 				<td>
-				<img src="https://w7.pngwing.com/pngs/830/666/png-transparent-chess-t-shirt-rook-drawing-chess-black-sports-silhouette.png">
+				<img src="https://w7.pngwing.com/pngs/830/666/png-transparent-chess-t-shirt-rook-drawing-chess-black-sports-silhouette.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://img2.gratispng.com/20180626/ywi/kisspng-chess-piece-horse-knight-queen-chess-horse-5b32222e7d7d62.240232791530012206514.jpg">
-			</td>
-				<td>	
-					<img src="https://img2.gratispng.com/20180420/ste/kisspng-chess-piece-bishop-queen-knight-5ad9e6d1812f63.0391145115242298415292.jpg">
-				</td>
-				<td>
-					<img src="https://w7.pngwing.com/pngs/941/949/png-transparent-king-chess-piece-stencil-painting-battle-chess-chess-piece-bishop-king-chess-pieces-game-king-queen-thumbnail.png">
-			</td>
-				<td>
-					<img src="https://w7.pngwing.com/pngs/147/862/png-transparent-chess-piece-queen-pawn-chess-king-hand-queen.png">
+				<img src="https://img2.gratispng.com/20180626/ywi/kisspng-chess-piece-horse-knight-queen-chess-horse-5b32222e7d7d62.240232791530012206514.jpg"class="preto" onclick="troca()">
 			</td>
 				<td>	
-					<img src="https://img2.gratispng.com/20180420/ste/kisspng-chess-piece-bishop-queen-knight-5ad9e6d1812f63.0391145115242298415292.jpg">
+					<img src="https://img2.gratispng.com/20180420/ste/kisspng-chess-piece-bishop-queen-knight-5ad9e6d1812f63.0391145115242298415292.jpg"class="preto" onclick="troca()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180626/ywi/kisspng-chess-piece-horse-knight-queen-chess-horse-5b32222e7d7d62.240232791530012206514.jpg">
+					<img src="https://w7.pngwing.com/pngs/941/949/png-transparent-king-chess-piece-stencil-painting-battle-chess-chess-piece-bishop-king-chess-pieces-game-king-queen-thumbnail.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://w7.pngwing.com/pngs/830/666/png-transparent-chess-t-shirt-rook-drawing-chess-black-sports-silhouette.png">
+					<img src="https://w7.pngwing.com/pngs/147/862/png-transparent-chess-piece-queen-pawn-chess-king-hand-queen.png"class="preto" onclick="troca()">
+			</td>
+				<td>	
+					<img src="https://img2.gratispng.com/20180420/ste/kisspng-chess-piece-bishop-queen-knight-5ad9e6d1812f63.0391145115242298415292.jpg"class="preto" onclick="troca()">
+				</td>
+				<td>
+					<img src="https://img2.gratispng.com/20180626/ywi/kisspng-chess-piece-horse-knight-queen-chess-horse-5b32222e7d7d62.240232791530012206514.jpg"class="preto" onclick="troca()">
+			</td>
+				<td>
+				<img src="https://w7.pngwing.com/pngs/830/666/png-transparent-chess-t-shirt-rook-drawing-chess-black-sports-silhouette.png"class="preto" onclick="troca()">
 			</td>
 			</tr>
 			<tr>
 				
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 				</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 			</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png">
+				<img src="https://e7.pngegg.com/pngimages/528/767/png-clipart-chess-pawn-chess-video-game-desktop-wallpaper.png"class="preto" onclick="troca()">
 			</td>
 			</tr>
 			<tr>
@@ -219,55 +153,55 @@
 			<tr>
 			
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg" class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg"class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg"class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg"class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg"class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg"class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg"class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg">
+					<img src="https://img2.gratispng.com/20180320/heq/kisspng-chess-piece-pawn-checkmate-computer-icons-svg-icon-pawn-5ab12917499c07.8543544015215598313015.jpg"class="Branco" onclick="mover()">
 				</td>
 			</tr>
 			<tr>
 				
 				<td>
-					<img src="https://img2.gratispng.com/20180330/vxe/kisspng-chess-piece-rook-king-chessboard-chess-5abdb6e0d71db2.2057309215223825608811.jpg">
+					<img src="https://img2.gratispng.com/20180330/vxe/kisspng-chess-piece-rook-king-chessboard-chess-5abdb6e0d71db2.2057309215223825608811.jpg"class="Branco" onclick="mover()">
 				</td>
 				<td>
-					<img src="https://img1.gratispng.com/20180627/bgg/kisspng-chess-piece-horse-knight-queen-chess-png-5b338679e49539.3485950915301034179363.jpg">
+					<img src="C:\Users\Usuario\Downloads\documentos HTML\pecas_deXadrez\Cavalo-branco.jpg"class="Branco" onclick="mover('cavalo-branco.jpg')">
 				</td>
 				<td>
-				<img src="https://img2.gratispng.com/20180415/ffq/kisspng-chess-piece-pawn-bishop-clip-art-chess-5ad3c21dc8bc01.7588236815238272298222.jpg">
+				<img src="https://img2.gratispng.com/20180415/ffq/kisspng-chess-piece-pawn-bishop-clip-art-chess-5ad3c21dc8bc01.7588236815238272298222.jpg"class="Branco" onclick="mover()">
 			</td>
 				<td>
-				<img src="https://e7.pngegg.com/pngimages/637/491/png-clipart-chess-piece-queen-king-chess.png">
+				<img src="C:/Users/Usuario/Downloads/documentos HTML/pecas_deXadrez/rei-branco.png"class="Branco" onclick="mover()">
 			</td>
 				<td>
-				<img src="https://w7.pngwing.com/pngs/994/696/png-transparent-queen-chess-piece-chess-piece-king-bishop-knight-chess-white-king-hand.png">
+				<img src="C:/Users/Usuario/Downloads/documentos HTML/pecas_deXadrez/rainha-branca.png"class="Branco" onclick="mover()">
 				</td>
 				<td>
-				<img src="https://img2.gratispng.com/20180415/ffq/kisspng-chess-piece-pawn-bishop-clip-art-chess-5ad3c21dc8bc01.7588236815238272298222.jpg">
+				<img src="https://img2.gratispng.com/20180415/ffq/kisspng-chess-piece-pawn-bishop-clip-art-chess-5ad3c21dc8bc01.7588236815238272298222.jpg"class="Branco" onclick="mover()">
 			</td>
 				<td>
-					<img src="https://img1.gratispng.com/20180627/bgg/kisspng-chess-piece-horse-knight-queen-chess-png-5b338679e49539.3485950915301034179363.jpg">
+					<img src="C:\Users\Usuario\Downloads\documentos HTML\pecas_deXadrez\Cavalo-branco.jpg"class="Branco" onclick="mover('cavalo-preto.jpg')">
 				</td>
 				<td>
-					<img src="https://img2.gratispng.com/20180330/vxe/kisspng-chess-piece-rook-king-chessboard-chess-5abdb6e0d71db2.2057309215223825608811.jpg">
+					<img src="https://img2.gratispng.com/20180330/vxe/kisspng-chess-piece-rook-king-chessboard-chess-5abdb6e0d71db2.2057309215223825608811.jpg"class="Branco" onclick="mover()">
 				</td>
 			</tr>
 			
@@ -286,9 +220,44 @@
 	</tfoot>
 
 	</table>
-	
-
+	<button class="cronometro" onclick="segundos()"> Clique para iniciar o cronômetro</button>
+	<div class="timerout">
+		<span id='minutos'>9</span> : <span id='segundos'>59 </span>
 	</div>
+	
+	<button id="voltar" onclick="voltarAoMenu(this)">Voltar ao menu </button>
+	</div>
+
+		
 	</section>
+
+
+	<script type="text/javascript" src="./Projeto_Xadrez.js">
+		
+		var  seg = 59;
+var min = 9;
+
+function segundos(){
+	seg--;
+	if(min > 0 && seg == 0 ){
+		min--;
+		seg=59;
+		document.querySelector('#minutos').innerHTML = min;
+	
+	}
+	else if (min == 0 && seg == 0){
+			var element = document.querySelector('span');
+			element.remove();// elimna o p´roprio span;
+			document.querySelector('.timerout').innerHTML = "A partida acabou !";
+
+	}
+	
+	
+	document.querySelector('#segundos').innerHTML = seg;
+
+
+}
+setInterval(function(){segundos()}, 1000);
+	</script>
 </body>
 </html>
